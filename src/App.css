@@ -1,0 +1,59 @@
+/* .App{
+    height: 100%;
+}
+ */
+.gif--grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 150px));
+    place-items: center;
+    place-content: center;
+    gap: 20px;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: contain;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.input{
+    height: 60px;
+    width: 250px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.input:focus{
+    border: red 3px;
+}
+
+.searchBar {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .gif--grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
+        gap: 20px;
+    }
+
+    img{
+        height: 200px;
+    }
+}
